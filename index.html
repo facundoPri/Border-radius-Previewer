@@ -3,37 +3,40 @@
   <head>
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
-  </head>
-
-  <body>
-    <div id="box"></div>
-    <div id="buttons">
-      <button id="all">All</button>
-      <button id="four">4</button>
-      <button id="eight">8</button>
-      <button id="CSS">CSS</button>
-    </div>
-    <div id="settings">
-      <div id="allInone">
-        <label for="all">All:</label>
-        <input type="range" id="all" min="0" max="300" />
+    <LINK REL=StyleSheet HREF="styles.css" TYPE="text/css" MEDIA=screen>
+    </head>
+    <body>
+      <div id="app">
+        <div id="box"></div>
+        <div id="buttons">
+          <button id="all">All</button>
+          <button id="four">4</button>
+          <button id="eight">8</button>
+          <button id="CSS">CSS</button>
+        </div>
+        <div id="settings">
+          <div id="allInone">
+            <label for="all">All:</label>
+            <input type="range" id="all" min="0" max="175" />
+          </div>
+          <div id="fourBorder">
+            <label for="topRigth">Top Rigth:</label>
+            <input type="range" id="topRigth" min="0" max="250" />
+            <label for="topLeft">Top Left:</label>
+            <input type="range" id="topLeft" min="0" max="250" />
+            <label for="bottomRigth">Bottom Rigth:</label>
+            <input type="range" id="bottomRigth" min="0" max="250" />
+            <label for="bottomLeft">Bottom Left:</label>
+            <input type="range" id="bottomLeft" min="0" max="250" />
+          </div>
+          <div id="eightBorder"></div>
+          <div id="clipboard">
+            <input type="text" value="test" />
+            <button id="copy">Copiar</button>
+          </div>
+        </div>
+        <p id="CSSDisplay"></p>
       </div>
-      <div id="fourBorder">
-        <label for="topRigth">Top Rigth:</label>
-        <input type="range" id="topRigth" min="0" max="300" />
-        <label for="topLeft">Top Left:</label>
-        <input type="range" id="topLeft" min="0" max="300" />
-        <label for="bottomRigth">Bottom Rigth:</label>
-        <input type="range" id="bottomRigth" min="0" max="300" />
-        <label for="bottomLeft">Bottom Left:</label>
-        <input type="range" id="bottomLeft" min="0" max="300" />
-      </div>
-      <div id="eightBorder"></div>
-      <div id="clipboard">
-        <input type="text" value="test" />
-        <button id="copy">Copiar</button>
-      </div>
-    </div>
-    <script src="src/index.js"></script>
+        <script src="main.js"></script>
   </body>
 </html>

@@ -1,0 +1,48 @@
+#app{
+  display: grid;
+  grid-template-columns: auto;
+  align-content: center;
+}
+#app > div{
+  text-align: center;
+}
+#box {
+  height: 250px;
+  width: 250px;
+  background-color: red;
+  margin: auto;
+  margin-top: 50px ;
+}
+
+#buttons{
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#settings > div{
+  display: none;
+  grid-template-columns: auto;
+  margin: auto;
+}
+
+#allInone {
+  display: none;
+}
+
+#fourBorder {
+  display: none;
+
+}
+
+#eightBorder {
+  display: none;
+}
+
+#clipboard {
+  display: none;
+}
+
+#app > p{
+  text-align: center;
+}
