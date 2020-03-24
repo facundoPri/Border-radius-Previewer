@@ -31,11 +31,15 @@
           </div>
           <div id="eightBorder"></div>
           <div id="clipboard">
-            <input type="text" value="test" />
-            <button id="copy">Copiar</button>
+            <div><textarea rows="5" cols="40" id="CSSDisplay"></textarea></div>
+            <div class="tooltip">
+              <button id="copy" onclick="copyText()" onmouseout="outFunc()">
+                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                Copy text
+                </button>
+              </div>
           </div>
         </div>
-        <p id="CSSDisplay"></p>
       </div>
         <script src="main.js"></script>
   </body>
